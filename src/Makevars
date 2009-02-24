@@ -1,0 +1,9 @@
+
+# directory containing Rcpp header and library
+RCPP_DIR=`Rscript -e 'cat(system.file("lib", package="Rcpp"))'`
+
+# compile flag providing header
+PKG_CXXFLAGS=-I${RCPP_DIR}
+
+# link flag providing libary as well as path to library
+PKG_LIBS=-L$(RCPP_DIR) -Wl,-rpath,$(RCPP_DIR) -lRcpp
