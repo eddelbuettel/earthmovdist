@@ -68,8 +68,8 @@ RcppExport SEXP emdL1(SEXP H1, SEXP H2, SEXP parms) {
         exceptionMesg = copyMessageToR("unknown reason");
     }
   
-    if(exceptionMesg != NULL)
-        error(exceptionMesg);
+    if (exceptionMesg != NULL)
+        Rf_error(exceptionMesg);
     
     return rl;
 }
