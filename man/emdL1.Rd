@@ -37,6 +37,7 @@
   to the 1st Mallows distance or 1st Wasserstein distance.
 
   For details on how the emd-L1 distance is computed in this algorithm, see
+  \preformatted{
   @ARTICLE{
     author = {Ling, Haibin and Okada, K.},
     title = {An efficient earth mover's distance algorithm for robust histogram
@@ -51,6 +52,7 @@
     publication-type = {J},
     publisher = {IEEE Comput. Soc},
     type = {Journal Paper}
+  }
   }
   
   The function has to be called by providing two signatures (x and
