@@ -11,5 +11,5 @@ Description: This packages provides the Emd-L1 distance metric from the paper
  http://www.ist.temple.edu/~hbling/code/EmdL1_v3.zip
 SystemRequirements: Rcpp
 License: GPL-2 for R package; research-only license for Emd-L1; see README.txt
-URL: http://www.ist.temple.edu/~hbling
+URL: http://earthmovdist.r-forge.r-project.org/
 Packaged: Sun Nov 23 12:44:32 2008; edd
