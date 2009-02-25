@@ -20,6 +20,9 @@
   This function provides an implementation of the Earth Movers Distance (EMD),
   using the L1 (taxicab) metric.
 
+  To quote wikipedia
+  (http://en.wikipedia.org/wiki/Earth\_Mover\'s\_Distance):
+
   'The earth mover's distance (EMD) is a mathematical measure of the
   distance between two distributions over some region D. Informally, if
   the distributions are interpreted as two different ways of piling up a
@@ -27,6 +30,8 @@
   of turning one pile into the other; where the cost is assumed to be
   amount of dirt moved times the distance by which its is moved'
   
+  (For a detailed discussion of the EMD, see
+  http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL\_COPIES/RUBNER/emd.htm)
 
   The distance 'the dirt' has to be moved is in the implementation of
   emd-L1, the L1 distance: if we have two points (x1, y1) and (x2, y2),
