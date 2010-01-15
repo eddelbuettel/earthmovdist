@@ -65,7 +65,9 @@ Author Contact Information:
 
 *******************************************************************************/
 
+#ifndef __GNUC__
 #pragma warning(disable:4786)
+#endif 
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -503,7 +505,7 @@ void EmdL1::InitBVTree()
 	//- Recursively build subtrees
 	PEmdEdge	pCurE=NULL, pNxtE=NULL;
 	PEmdNode	pCurN=NULL, pNxtN=NULL;
-	int	iCurL	= -1;
+	//int	iCurL	= -1;
 	int	nBin	= m_n1*m_n2*MAX(m_n3,1);
 	while(iQHead<nQueue && nQueue<nBin)
 	{
@@ -525,13 +527,13 @@ void EmdL1::InitBVTree()
 		int	nNB	= m_nDim==2 ? 4 : 6;
 		for(int k=0;k<nNB;++k)
 		{
-			if(m_nDim==2)
+		  	if(m_nDim==2) {
 				if(k==0 && c>0)				pNxtN	= &(m_Nodes[r][c-1]);		// left
 				else if(k==1 && r>0)		pNxtN	= &(m_Nodes[r-1][c]);		// down
 				else if(k==2 && c<m_n2-1)	pNxtN	= &(m_Nodes[r][c+1]);		// right
 				else if(k==3 && r<m_n1-1)	pNxtN	= &(m_Nodes[r+1][c]);		// up
 				else						continue;
-			else if(m_nDim==3)
+			} else if(m_nDim==3) {
 				if(k==0 && c>0)				pNxtN	= &(m_3dNodes[r][c-1][z]);		// left
 				else if(k==1 && c<m_n2-1)	pNxtN	= &(m_3dNodes[r][c+1][z]);		// right
 				else if(k==2 && r>0)		pNxtN	= &(m_3dNodes[r-1][c][z]);		// down
@@ -539,6 +541,7 @@ void EmdL1::InitBVTree()
 				else if(k==4 && z>0)		pNxtN	= &(m_3dNodes[r][c][z-1]);		// shallow
 				else if(k==5 && z<m_n3-1)	pNxtN	= &(m_3dNodes[r][c][z+1]);		// deep
 				else						continue;
+			}
 
 			if(pNxtN != pCurN->pParent)
 			{
