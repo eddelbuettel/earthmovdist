@@ -67,7 +67,9 @@ Author Contact Information:
 #ifndef	EMDL1_H_
 #define	EMDL1_H_
 
+#ifndef __GNUC__
 #pragma warning(disable:4786)
+#endif
 
 #include <vector>
 
@@ -128,7 +130,7 @@ public:
 
 	EMDTYPE EmdDist(EMDTYPE *H1, EMDTYPE *H2, int n1, int n2, int n3=0);
 	EMDTYPE EmdDist(EMDTYPE *H1, EMDTYPE *H2, int n1);	// 1-D, special and simple case
-	int		SetMaxIteration(int nMaxIt)		{	m_nMaxIt=nMaxIt;	};
+	void	SetMaxIteration(int nMaxIt)		{	m_nMaxIt=nMaxIt;	};
 
 private:
 
