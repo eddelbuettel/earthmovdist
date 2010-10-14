@@ -45,8 +45,7 @@ RcppExport SEXP emdL1(SEXP H1, SEXP H2, SEXP parms) {
 		break;
 	}
 
-	//return Rcpp::NumericVector::create(Rcpp::Named("dist", Rcpp::wrap(d)));
-	return Rcpp::wrap(d);
+	return Rcpp::NumericVector::create(Rcpp::Named("dist", d));
 
     } catch(std::exception &ex) { 
         forward_exception_to_r(ex); 
