@@ -54,8 +54,6 @@ emdL1 <- function(x, y, dims=NULL, verbose=FALSE)
                     )
   }
 
-  val <- .Call("emdL1", as.vector(x), as.vector(y), parms, PACKAGE="earthmovdist")
-  d <- val[["dist"]]
-
+  d <- .Call("emdL1", as.vector(x), as.vector(y), parms, PACKAGE="earthmovdist")
   return(d)
 }
