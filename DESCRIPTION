@@ -1,5 +1,5 @@
 Package: earthmovdist
-Version: 0.1.0
+Version: 0.1.1
 Date: 2009-04-24
 Author: Rainer M Krug <Rainer@krugs.de> and Dirk Eddelbuettel <edd@debian.org> 
 Maintainer: Rainer M Krug <Rainer@krugs.de>
@@ -10,7 +10,7 @@ Description: This packages provides the Emd-L1 distance metric from the paper
  Machine Intelligence (PAMI), 29(5):840-853, 2007. It is based on code from
  http://www.ist.temple.edu/~hbling/code/EmdL1_v3.zip
 Depends: Rcpp (>= 0.6.4)
-SystemRequirements: Rcpp
+LinkingTo: Rcpp
 License: GPL-2 for R package; research-only license for Emd-L1; see README.txt
 URL: http://earthmovdist.r-forge.r-project.org/
 Packaged: Mon Apr 20 09:40:16 2009; rkrug
