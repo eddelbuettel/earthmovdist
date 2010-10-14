@@ -9,7 +9,7 @@ Description: This packages provides the Emd-L1 distance metric from the paper
  Robust Histogram Comparison,  IEEE Transaction on Pattern Analysis and
  Machine Intelligence (PAMI), 29(5):840-853, 2007. It is based on code from
  http://www.ist.temple.edu/~hbling/code/EmdL1_v3.zip
-Depends: Rcpp (>= 0.6.4)
+Depends: Rcpp (>= 0.8.0)
 LinkingTo: Rcpp
 License: GPL-2 for R package; research-only license for Emd-L1; see README.txt
 URL: http://earthmovdist.r-forge.r-project.org/
