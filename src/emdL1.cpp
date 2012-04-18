@@ -74,6 +74,8 @@ Author Contact Information:
 #include <math.h>
 #include "emdL1.h"
 
+#include <R.h>			// for Rprintf()
+
 /******************************************************************************
 	Construction and deconstruction
  ******************************************************************************/
@@ -112,7 +114,7 @@ EMDTYPE EmdL1::EmdDist(EMDTYPE *H1, EMDTYPE *H2, int n1, int n2, int n3/*=0*/)
 
 	// Initialization
 	if(!InitMemory(n1, n2, n3)) {	// Initialize memory (reallocate if necessary)
-		printf("Memory allocation failed!\n");
+		Rprintf("Memory allocation failed!\n");
 		return -1;
 	}
 	Initialize(H1,H2,n1,n2,n3);		// Initialize histgrams
