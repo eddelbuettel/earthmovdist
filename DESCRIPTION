@@ -1,16 +1,15 @@
 Package: earthmovdist
-Version: 0.1.1
-Date: 2009-04-24
+Version: 0.1.2
+Date: 2012-04-18
 Author: Rainer M Krug <Rainer@krugs.de> and Dirk Eddelbuettel <edd@debian.org> 
-Maintainer: Rainer M Krug <Rainer@krugs.de>
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Title: Wrapper to the Emd-L1 library by Haibin Ling and Kazunori Okada
 Description: This packages provides the Emd-L1 distance metric from the paper
- by H. Ling and K. Okada, An Efficient Earth Mover's Distance Algorithm for
- Robust Histogram Comparison,  IEEE Transaction on Pattern Analysis and
- Machine Intelligence (PAMI), 29(5):840-853, 2007. It is based on code from
- http://www.ist.temple.edu/~hbling/code/EmdL1_v3.zip
+  by H. Ling and K. Okada, An Efficient Earth Mover's Distance Algorithm for
+  Robust Histogram Comparison,  IEEE Transaction on Pattern Analysis and
+  Machine Intelligence (PAMI), 29(5):840-853, 2007. It is based on code from
+  http://www.ist.temple.edu/~hbling/code/EmdL1_v3.zip
 Depends: Rcpp (>= 0.8.0)
 LinkingTo: Rcpp
 License: GPL-2 for R package; research-only license for Emd-L1; see README.txt
 URL: http://earthmovdist.r-forge.r-project.org/
-Packaged: Mon Apr 20 09:40:16 2009; rkrug
