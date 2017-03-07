@@ -4,12 +4,13 @@ Date: 2012-04-18
 Author: Rainer M Krug <Rainer@krugs.de> and Dirk Eddelbuettel <edd@debian.org> 
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Title: Wrapper to the Emd-L1 library by Haibin Ling and Kazunori Okada
-Description: This packages provides the Emd-L1 distance metric from the paper
-  by H. Ling and K. Okada, An Efficient Earth Mover's Distance Algorithm for
-  Robust Histogram Comparison,  IEEE Transaction on Pattern Analysis and
-  Machine Intelligence (PAMI), 29(5):840-853, 2007. It is based on code from
-  http://www.ist.temple.edu/~hbling/code/EmdL1_v3.zip
+Description: The Emd-L1 distance metric from the paper by H. Ling and
+ K. Okada, An Efficient Earth Mover's Distance Algorithm for
+ Robust Histogram Comparison, IEEE Transaction on Pattern Analysis and
+ Machine Intelligence (PAMI), 29(5):840-853, 2007, is provided for use
+ by R. It is based on code downloaded from the URL
+ <http://www.ist.temple.edu/~hbling/code/EmdL1_v3.zip>.
 Depends: Rcpp (>= 0.8.0)
 LinkingTo: Rcpp
-License: GPL-2 for R package; research-only license for Emd-L1; see README.txt
+License: file LICENSE
 URL: http://earthmovdist.r-forge.r-project.org/

@@ -1,6 +1,8 @@
 
 ## package has dynamic library
-useDynLib(earthmovdist)
+useDynLib("earthmovdist")
+
+importFrom("Rcpp", "evalCpp")
 
 ## and one and only one core function
-export(emdL1)
+export("emdL1")
