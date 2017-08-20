@@ -9,7 +9,7 @@ emdL1 <- function(x, y, dims=NULL, verbose=FALSE) {
 
         ## if x and y are vectors, check if they are of same length
         if (is.null(dim(x))) {
-            if (length(x)!=length(y)) {
+            if (length(x) != length(y)) {
                 stop("x and y must be of the same size!\n\nExecution aborted!\n")
             } else {
                 ## set dims to length if vector
