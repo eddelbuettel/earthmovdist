@@ -17,7 +17,7 @@ copied into [LICENSE](LICENSE).
 
 ### See Also
 
-The [emdist](https://cloud.r-project.org/package=emdist) package provides Earth Mover's
+The [emdist](https://cran.r-project.org/package=emdist) package provides Earth Mover's
 Distance calculations under a more common open source license.
 
 ### History
@@ -25,7 +25,7 @@ Distance calculations under a more common open source license.
 We wrote this package _many_ years ago as a first and rather simple illustration of
 [Rcpp](http://dirk.eddelbuettel.com/code/rcpp.html).  At the time, no other Earth Mover's
 Distance implementations were available for R. These days, you may wan to use
-[emdist](https://cloud.r-project.org/package=emdist) or one of the other, newer
+[emdist](https://cran.r-project.org/package=emdist) or one of the other, newer
 distance-computing packages.
 
 ### Authors
