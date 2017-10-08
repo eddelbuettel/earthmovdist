@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 emdL1_impl <- function(h1, h2, rparam) {
-    .Call('earthmovdist_emdL1_impl', PACKAGE = 'earthmovdist', h1, h2, rparam)
+    .Call(`_earthmovdist_emdL1_impl`, h1, h2, rparam)
 }
 

@@ -1,6 +1,6 @@
 
 ## package has dynamic library
-useDynLib("earthmovdist")
+useDynLib("earthmovdist", .registration = TRUE)
 
 importFrom("Rcpp", "evalCpp")
 

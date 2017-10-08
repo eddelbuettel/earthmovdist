@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // emdL1_impl
 Rcpp::NumericVector emdL1_impl(Rcpp::NumericVector h1, Rcpp::NumericVector h2, Rcpp::List rparam);
-RcppExport SEXP earthmovdist_emdL1_impl(SEXP h1SEXP, SEXP h2SEXP, SEXP rparamSEXP) {
+RcppExport SEXP _earthmovdist_emdL1_impl(SEXP h1SEXP, SEXP h2SEXP, SEXP rparamSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -17,4 +17,14 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(emdL1_impl(h1, h2, rparam));
     return rcpp_result_gen;
 END_RCPP
+}
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_earthmovdist_emdL1_impl", (DL_FUNC) &_earthmovdist_emdL1_impl, 3},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_earthmovdist(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }
