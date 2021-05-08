@@ -143,7 +143,7 @@ private:
 	void	InitBVTree();					// initialize BVTree from the initial BF solution
 
 	int		UpdateU(PEmdNode	pRoot);
-	int     check_alpha_flag(PEmdEdge pEdge);
+	int     CheckAlphaFlag(PEmdEdge pEdge);
 	void	UpdateSubtree(PEmdNode pRoot);
 	bool 	IsOptimal();
 	void	FindNewSolution();
