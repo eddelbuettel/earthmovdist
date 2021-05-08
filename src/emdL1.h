@@ -155,6 +155,7 @@ private:
 	int		m_n1, m_n2, m_n3;			// the hitogram contains m_n1 rows and m_n2 columns
 	int		m_nNBV;						// number of Non-Basic Variables (NBV)
 	int		m_nMaxIt;
+	int             alpha;
 
 	/*/ tree related data structure
 	// The removed code here works well for VC 2005 but not for VC6
